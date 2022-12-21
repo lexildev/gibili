@@ -11,7 +11,7 @@ def init():
     global model
     HF_AUTH_TOKEN = os.getenv("HF_AUTH_TOKEN")
     
-    repo_id = "stabilityai/stable-diffusion-2"
+    repo_id = "nitrosocke/Ghibli-Diffusion"
 
     scheduler = EulerDiscreteScheduler.from_pretrained(repo_id, subfolder="scheduler", prediction_type="v_prediction")
 
